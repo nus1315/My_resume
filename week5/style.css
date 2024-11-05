@@ -1,0 +1,55 @@
+.profile-section {
+    display: grid; /* ใช้ flexbox เพื่อจัดเรียงรูปโปรไฟล์และข้อมูล */
+    align-items: right; /* จัดตำแหน่งให้อยู่กลางแนวตั้ง */
+}
+
+.profile-pic {
+    width: 250px; /* กำหนดความกว้าง */
+    height: 325px; /* กำหนดความสูง */
+    border-radius: 50%; /* ทำให้รูปเป็นวงกลม */
+    object-fit: cover; /* ทำให้ภาพครอบครองพื้นที่โดยไม่ทำให้เสียสัดส่วน */
+    border: 3px solid #007bff; /* เพิ่มกรอบรอบรูป */
+    margin-right: 20px; /* เพิ่มระยะห่างทางขวาระหว่างรูปโปรไฟล์กับข้อมูล */
+}
+#contract {
+    border: 2px solid #000;
+    padding: 20px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .navbar {
+    position: sticky; /* ทำให้ navbar ยึดติด */
+    top: 0; /* กำหนดให้ยึดติดที่ด้านบนสุดของ viewport */
+    z-index: 1000; /* ตั้งค่า z-index เพื่อให้แน่ใจว่า navbar อยู่เหนือเนื้อหาอื่นๆ */
+}
+.timeline {
+    list-style-type: none;
+    padding: 0;
+}
+
+.timeline-item {
+    position: relative;
+    margin: 20px 0;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    height: 100%;
+    border-left: 2px solid #007bff; /* Change color as needed */
+}
+
+.timeline-content {
+    padding: 10px 20px;
+    background: #f8f9fa; /* Light background */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    margin: 0;
+}
